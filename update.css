@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+Table{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid black; */
+    /* padding-top: 20px; */
+    /* margin-top: 20px; */
+    
+}
+
+Table tr{
+    /* background-color: rgba(85, 137, 91, 0.887); */
+    font-size: 30px;
+    border: 1px solid black;
+     background-color:whitesmoke;
+    
+}
+
+Table tr th{
+    background-color: rgb(229, 147, 147);
+
+    font-weight: 700;
+    /* border-radius: 20px; */
+}
+
+Table tr td{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 30px;
+    
+    
+}
+
+

@@ -1,0 +1,53 @@
+{
+  "Data": [
+    {
+      "id": "c53a",
+      "Name": "Rahul Shriwas",
+      "gender": "male",
+      "age": "45",
+      "salary": "1000000000",
+      "department": "Data analytics"
+    },
+    {
+      "id": "d960",
+      "Name": "danish ",
+      "gender": "male",
+      "age": "30",
+      "salary": "450000",
+      "department": "Python developer"
+    },
+    {
+      "id": "612f",
+      "Name": "Rahul",
+      "gender": "male",
+      "age": "40",
+      "salary": "200000000",
+      "department": "Data analytics"
+    },
+    {
+      "id": "413b",
+      "Name": "Abhay Dixit",
+      "gender": "male",
+      "age": "24",
+      "salary": "2000000",
+      "department": "MERN Developer"
+    },
+    {
+      "id": "a7de",
+      "Name": "Shubham kose",
+      "gender": "male",
+      "age": "24",
+      "salary": "45000",
+      "department": "Pyhton Developer"
+    },
+    {
+      "id": "b89e",
+      "Name": "vikas sharma",
+      "gender": "male",
+      "age": "26",
+      "salary": "2000000",
+      "department": "MERN Developer"
+    }
+  ],
+  "User": []
+}

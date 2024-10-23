@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="add.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="">
+                    <span class="icon"></span>
+                    <span class="title"><h2>Dashboard</h2></span>
+                    </a>
+                    <span class="title" style="display: flex; justify-content: center; color: rgb(136, 195, 181); font-weight: 800; background-color: aliceblue;"><h3>Infosys Company</h3></span>
+                </li>
+                <li>
+                    <a href="index.html">
+                    <span class="icon"><i class="fa-solid fa-chart-line"></i></span>
+                    <span class="title"  style="font-family:  Roboto, sans-serif;">Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="Add.html">
+                    <span class="icon"><i class="fa-solid fa-user-plus"></i></span>
+                    <span class="title">Add Employee</span></a>
+                </li>
+                <li>
+                    <a href="Update.html">
+                    <span class="icon"><i class="fa-solid fa-display"></i></span>
+                    <span class="title">Display data</span></a>
+                </li>
+                <li>
+                    <a href="Edit.html">
+                    <span class="icon"><i class="fa-solid fa-user-pen"></i></span>
+                    <span class="title">Edit data</span></a>
+                </li>
+                <li>
+                    <a href="Delete.html">
+                    <span class="icon"><i class="fa-solid fa-trash"></i></span>
+                    <span class="title">Delete data</span></a>
+                </li>
+                <li>
+                    <a href="password.html">
+                    <span class="icon"><i class="fa-solid fa-key"></i></span>
+                    <span class="title">Password change</span></a>
+                </li>
+                <li>
+                    <a href="search.html">
+                    <span class="icon"><i class="fa-solid fa-gears"></i></span>
+                    <span class="title">Search</span></a>
+                </li>
+                <li>
+                    <a href="register.html">
+                    <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                    <span class="title">Log out</span></a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <div class="togbar">
+                <div class="toggle" onclick="ToggleMenu();">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="search" placeholder="Search..." id="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    
+                </div>
+                <div class="user">
+                    <img src="images/photo.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="insert" style="padding-top: 20px;" >
+                <div class="add" >
+                <h1 style="display: flex; justify-content: center; border-radius: 20px; padding: 20px; background-color: rgb(24, 74, 144); color: aliceblue;">Add Employee</h1> 
+                <br>
+                <div class="data" style="border-radius: 20px;">
+               <label> Enter your name: </label>
+                <input type="text" id="name">
+                <br>
+               
+                <div class="radio" style="display: flex; flex-direction: row; width: 400px;" >
+                <input type="radio" id="male" name="fav_language" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="Female" name="fav_language" value="Female">
+        <label for="Female">Female</label><br>
+        <input type="radio" id="other" name="fav_language" value="other">
+        <label for="other">other</label>
+    </div>
+                <br>
+                <label> Enter your age:   </label>
+                 <input type="text" id="age">
+                <br>
+
+                <label> Enter your salary </label>
+                    <input type="text" id="salary">
+                <br>
+              <label>  Enter your department </label>
+                <input type="text" id="dep">
+                <br>
+           
+            <div class="datasave">
+                <button id="datasave">Save data</button>
+            </div>
+            </div>
+            
+            </div>
+       
+            </div>
+        </div>
+    
+    </div>
+
+
+    <script>
+        function ToggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation= document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active')
+           
+            
+            
+        }
+    </script>
+
+   
+
+<script src="dashbaord.js"></script>
+<script src="add.js"></script>

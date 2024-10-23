@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="update.css">
+    <link rel="stylesheet" href="Delete.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="">
+                    <span class="icon"></span>
+                    <span class="title"><h2>Dashboard</h2></span>
+                    </a>
+                    <span class="title" style="display: flex; justify-content: center; color: rgb(136, 195, 181); font-weight: 800; background-color: aliceblue;"><h3>Infosys Company</h3></span>
+                </li>
+                <li>
+                    <a href="index.html">
+                    <span class="icon"><i class="fa-solid fa-chart-line"></i></span>
+                    <span class="title"  style="font-family:  Roboto, sans-serif;">Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="Add.html">
+                    <span class="icon"><i class="fa-solid fa-user-plus"></i></span>
+                    <span class="title">Add Employee</span></a>
+                </li>
+                <li>
+                    <a href="Update.html">
+                    <span class="icon"><i class="fa-solid fa-display"></i></span>
+                    <span class="title">Display data</span></a>
+                </li>
+                <li>
+                    <a href="Edit.html">
+                    <span class="icon"><i class="fa-solid fa-user-pen"></i></span>
+                    <span class="title">Edit data</span></a>
+                </li>
+                <li>
+                    <a href="Delete.html">
+                    <span class="icon"><i class="fa-solid fa-trash"></i></span>
+                    <span class="title">Delete data</span></a>
+                </li>
+                <li>
+                    <a href="password.html">
+                    <span class="icon"><i class="fa-solid fa-key"></i></span>
+                    <span class="title">Password change</span></a>
+                </li>
+                <li>
+                    <a href="search.html">
+                    <span class="icon"><i class="fa-solid fa-gears"></i></span>
+                    <span class="title">Search</span></a>
+                </li>
+                <li>
+                    <a href="register.html">
+                    <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                    <span class="title">Log out</span></a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <div class="togbar">
+                <div class="toggle" onclick="ToggleMenu();">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="search" placeholder="Search..." id="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    
+                </div>
+                <div class="user">
+                    <img src="images/photo.jpg" alt="">
+                </div>
+            </div>
+
+            <div>
+                
+                <h1 style="padding: 5px; color: rgb(23, 86, 138); font-weight: 700;" >Data display</h1>
+             <p id="demo" style="padding-top: 20px; padding: 10px;"></p>
+        
+
+
+
+
+
+            </div>
+        </div>
+    
+    </div>
+
+
+    <script>
+        function ToggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation= document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active')
+            
+            
+        }
+    </script>
+
+<script src="dashbaord.js"></script>
+<!-- <script src="update.js"></script> -->
+ <script src="delete.js"></script>
